@@ -1,0 +1,21 @@
+#crear-evento > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 80svh;
+}
+
+#crear-evento input {
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+  background-color: #f9f9f9;
+}
+#crear-evento textarea {
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+  background-color: #f9f9f9;
+}

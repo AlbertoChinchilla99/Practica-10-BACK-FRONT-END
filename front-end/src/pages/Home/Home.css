@@ -1,0 +1,114 @@
+/* Estilos generales de eventos */
+.evento {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.evento > img {
+  width: 50%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.evento > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.eventos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.evento > .like {
+  width: 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 30px;
+}
+
+.evento > .like:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos para el modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 70%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.modal-content h2 {
+  margin-top: 20px;
+  font-size: 1.5em;
+}
+
+.modal-content p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  background: none;
+  border: none;
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: red;
+}
+
+/* Animación de aparición del modal */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
